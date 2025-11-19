@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+webhook:
+  secret: "code-karma-secret" # GitHub webhook secret (X-Hub-Signature-256)
+
+github:
+  ingest:
+    topic: events.ingest

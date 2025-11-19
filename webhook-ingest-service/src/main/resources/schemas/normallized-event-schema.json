@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NormalizedEvent",
+  "type": "object",
+  "properties": {
+    "eventId": { "type": "string" },
+    "eventType": { "type": "string" },
+    "action": { "type": ["string", "null"] },
+    "repo": { "type": ["string", "null"] },
+    "sender": { "type": ["string", "null"] },
+    "timestamp": { "type": "integer" },
+    "rawPayload": { "type": ["string", "null"] }
+  },
+  "required": ["eventId", "eventType", "timestamp"]
+}
